@@ -2,7 +2,7 @@
 Contributors: wpbean, imranwpb
 Tags: quick view, Products Quick View, woocommerce quick view, woocommerce, quickview
 Requires at least: 5.0
-Tested up to: 6.6.2
+Tested up to: 6.7
 Stable tag: 2.1.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
