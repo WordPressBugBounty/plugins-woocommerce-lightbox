@@ -2,7 +2,7 @@
 Contributors: wpbean, imranwpb
 Tags: quick view, Products Quick View, woocommerce quick view, woocommerce, quickview
 Requires at least: 5.0
-Tested up to: 6.7
+Tested up to: 6.7.1
 Stable tag: 2.1.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -11,8 +11,7 @@ WooCommerce Quick View button with light box popup for product details. Will hel
 
 == Description ==
 
-
-Running an eCommerce site with WooCommerce? The WooCommerce Quick View is most necessary for your site. The more you can show your product details to your customers more you get conversions. WPB Product Quick View Popup for WooCommerce allow you to set WooCommerce Quick View very easily. It's a minimal and mobile responsive design and works with all standard WordPress themes.
+Using WooCommerce to run an eCommerce website? The most important feature for your website is the WooCommerce Quick View. Conversions increase with the amount of information you can provide your clients about your products. Setting up WooCommerce Quick View is made simple with the help of the WPB Product Quick View Popup for WooCommerce. It is compatible with all popular WordPress themes and has a simple, mobile-responsive design.
 
 It's premium version WPB Product Quick View Popup for WooCommerce PRO comes with an advance setting panel. So you can configure the WooCommerce Quick View button and WooCommerce Quick View popup as you need.
 
