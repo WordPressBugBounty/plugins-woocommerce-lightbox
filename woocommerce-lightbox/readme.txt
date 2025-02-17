@@ -1,13 +1,13 @@
-=== WPB Quick View Popup for WooCommerce - Display Product Informations in Popup on Button Click ===
+=== WPB Quick View for WooCommerce ===
 Contributors: wpbean, imranwpb
 Tags: quick view, Products Quick View, woocommerce quick view, woocommerce, quickview
 Requires at least: 5.0
-Tested up to: 6.7.1
+Tested up to: 6.7.2
 Stable tag: 2.1.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-WooCommerce Quick View button with light box popup for product details. Will help to increase eCommerce conversion rate.
+Enhance your store with Quick View for WooCommerce! Let customers preview products instantly, boosting engagement and conversions.
 
 == Description ==
 
