@@ -1,28 +1,27 @@
-=== WPB Quick View for WooCommerce ===
+=== WPB Quick View Popup for WooCommerce ===
 Contributors: wpbean, imranwpb
 Tags: quick view, Products Quick View, woocommerce quick view, woocommerce, quickview
 Requires at least: 5.0
-Tested up to: 6.8.2
-Stable tag: 2.1.8
+Tested up to: 6.9
+Stable tag: 2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Enhance your store with the WPB Quick View lightbox for WooCommerce! Let customers preview products instantly, boosting engagement and conversions.
+Add a quick view popup to WooCommerce products so customers can preview product details without leaving the shop page.
 
 == Description ==
 
-Using WooCommerce to run an eCommerce website? The most important feature for your website is the WooCommerce Quick View. Conversions increase with the amount of information you can provide your clients about your products. Setting up WooCommerce Quick View is made simple with the help of the WPB Product Quick View Popup for WooCommerce. It is compatible with all popular WordPress themes and has a simple, mobile-responsive design.
+<strong>WPB Quick View Popup for WooCommerce</strong> is a lightweight and user-friendly plugin that lets customers preview product details in a clean, responsive popup without navigating away from the shop or category page. By adding a quick view popup to your WooCommerce store, you can significantly improve product browsing, reduce page reloads, and enhance the overall shopping experience.
 
-It's premium version WPB Product Quick View Popup for WooCommerce PRO comes with an advance setting panel. So you can configure the WooCommerce Quick View button and WooCommerce Quick View popup as you need.
+The quick view popup displays essential product information such as images, title, price, and product gallery in an elegant overlay, allowing customers to view product details instantly. This helps shoppers compare products faster and encourages engagement while keeping them focused on your product listings.
+
+Designed specifically for WooCommerce, <strong>WPB Quick View Popup for WooCommerce</strong> works seamlessly with modern themes and is fully responsive across desktops, tablets, and mobile devices. The plugin is optimized for performance and simplicity, ensuring fast load times and smooth interactions without adding unnecessary bloat.
+
+Whether you run a small shop or a large WooCommerce store, this quick view popup plugin helps improve usability, supports faster purchase decisions, and can contribute to higher conversions by making product exploration quicker and more intuitive.
 
 >[DEMO](http://demo1.wpbean.com/woocommerce-lightbox/)  |  [Support](https://wpbean.com/support/)  |  [Buy PRO Version](https://wpbean.com/downloads/woocommerce-lightbox-pro/) |  [PRO Version Demo](https://demo2.wpbean.com/shop/)  |  [Video Documentation](https://www.youtube.com/watch?v=3g2pcfRgi5Q&feature=youtu.be)
 
 ### Free version not comes with the settings. Settings is only for the Pro version.
-
-### 👋 Hi, Need expert WordPress & WooCommerce development help?
-I’m currently available for hire — WordPress and WooCommerce development, custom features, bug fixing, speed optimization, performance tuning, full site development, and more.
-With over 10 years of experience building high-quality WordPress solutions, I can help you take your website to the next level. 
-[__Contact me here →__](https://wpbean.com/web-development-services/?utm_source=WordPress&utm_medium=desc-link&utm_campaign=available-for-hire&utm_content=WooCommerce+LightBox)
 
 ### Video Documentation:
 
@@ -191,6 +190,9 @@ Install it as a regular plugin, then hover any product, you will see a button ca
 
 = version 2.1.8 =
 * Tested with WooCommerce 8.3.1 and WordPress 6.4.1
+
+= version 2.2 =
+* A few sanitization and escaping issues are fixed. 
 
 
 == Upgrade notice ==

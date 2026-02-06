@@ -10,7 +10,10 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 add_action( 'woocommerce_after_shop_loop_item', 'wpb_wl_hook_quickview_link', 11 );
 
 function wpb_wl_hook_quickview_link(){
-	echo '<div class="wpb_wl_preview_area"><span class="wpb_wl_preview open-popup-link" data-mfp-src="#wpb_wl_quick_view_'.get_the_id().'" data-effect="mfp-zoom-in">'. apply_filters( 'wpb_wl_quick_view_btn_text', esc_html__( 'Quick View', 'woocommerce-lightbox' ) ) .'</span></div>';
+	printf('<div class="wpb_wl_preview_area"><span class="wpb_wl_preview open-popup-link" data-mfp-src="#wpb_wl_quick_view_%s" data-effect="mfp-zoom-in">%s</span></div>',
+		esc_attr(get_the_id()),
+		esc_html(apply_filters( 'wpb_wl_quick_view_btn_text', esc_html__( 'Quick View', 'woocommerce-lightbox' ) ))
+	);
 }
 
 
@@ -31,10 +34,10 @@ function wpb_wl_hook_quickview_content(){
 		'images',
 	) );
 	$attachment_ids = $product->get_gallery_image_ids();
-	$gallery_id = rand(100,1000);
+	$gallery_id = wp_rand(100,1000);
 
 	?>
-	<div id="wpb_wl_quick_view_<?php echo get_the_id(); ?>" class="mfp-hide mfp-with-anim wpb_wl_quick_view_content wpb_wl_clearfix product">
+	<div id="wpb_wl_quick_view_<?php echo esc_attr(get_the_id()); ?>" class="mfp-hide mfp-with-anim wpb_wl_quick_view_content wpb_wl_clearfix product">
 		<div class="wpb_wl_images">
 			<div class="<?php echo esc_attr( implode( ' ', array_map( 'sanitize_html_class', $wrapper_classes ) ) ); ?>" data-columns="<?php echo esc_attr( $columns ); ?>">
 				<figure class="woocommerce-product-gallery__wrapper">
@@ -53,12 +56,11 @@ function wpb_wl_hook_quickview_content(){
 						$html .= '</a></div>';
 					} else {
 						$html  = '<div class="woocommerce-product-gallery__image--placeholder">';
-						$html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src() ), esc_html__( 'Awaiting product image', 'woocommerce' ) );
+						$html .= sprintf( '<img src="%s" alt="%s" class="wp-post-image" />', esc_url( wc_placeholder_img_src() ), esc_html__( 'Awaiting product image', 'woocommerce-lightbox' ) );
 						$html .= '</div>';
 					}
 
-					echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, get_post_thumbnail_id( $post->ID ) );
-
+					echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, get_post_thumbnail_id( $post->ID ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					?>
 				</figure>
 
@@ -94,7 +96,13 @@ function wpb_wl_hook_quickview_content(){
 								$html .= wp_get_attachment_image( $attachment_id, 'shop_single', false, $attributes );
 						 		$html .= '</a>';
 
-								echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $attachment_id );
+						 		/**
+								 * Filter product image thumbnail HTML string.
+								 *
+								 * @param string $html          Product image thumbnail HTML string.
+								 * @param int    $attachment_id Attachment ID.
+								 */
+								echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $attachment_id ); // PHPCS:Ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 								$loop++;
 							}
@@ -109,7 +117,7 @@ function wpb_wl_hook_quickview_content(){
 
 			<!-- Product Price -->
 			<?php if ( $price_html = $product->get_price_html() ) : ?>
-				<span class="price wpb_wl_product_price"><?php echo $price_html; ?></span>
+				<span class="price wpb_wl_product_price"><?php echo wp_kses_post($price_html); ?></span>
 			<?php endif; ?>
 
 			<!-- Product short description -->
