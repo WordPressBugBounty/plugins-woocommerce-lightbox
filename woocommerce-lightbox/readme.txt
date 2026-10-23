@@ -1,8 +1,8 @@
-=== WPB Quick View Popup for WooCommerce ===
+=== WPB Quick View Popup for WooCommerce – Fast Product Preview Modal & AJAX Quick View ===
 Contributors: wpbean, imranwpb
 Tags: quick view, Products Quick View, woocommerce quick view, woocommerce, quickview
 Requires at least: 5.0
-Tested up to: 6.9
+Tested up to: 7.0.4
 Stable tag: 2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -13,13 +13,14 @@ Add a quick view popup to WooCommerce products so customers can preview product 
 
 <strong>WPB Quick View Popup for WooCommerce</strong> is a lightweight and user-friendly plugin that lets customers preview product details in a clean, responsive popup without navigating away from the shop or category page. By adding a quick view popup to your WooCommerce store, you can significantly improve product browsing, reduce page reloads, and enhance the overall shopping experience.
 
+>[DEMO](http://demo1.wpbean.com/woocommerce-lightbox/)  |  [Support](https://wpbean.com/support/)  |  [Buy PRO Version](https://wpbean.com/downloads/woocommerce-lightbox-pro/) |  [PRO Version Demo](https://demo2.wpbean.com/shop/)  |  [Video Documentation](https://www.youtube.com/watch?v=3g2pcfRgi5Q&feature=youtu.be)
+
 The quick view popup displays essential product information such as images, title, price, and product gallery in an elegant overlay, allowing customers to view product details instantly. This helps shoppers compare products faster and encourages engagement while keeping them focused on your product listings.
 
 Designed specifically for WooCommerce, <strong>WPB Quick View Popup for WooCommerce</strong> works seamlessly with modern themes and is fully responsive across desktops, tablets, and mobile devices. The plugin is optimized for performance and simplicity, ensuring fast load times and smooth interactions without adding unnecessary bloat.
 
 Whether you run a small shop or a large WooCommerce store, this quick view popup plugin helps improve usability, supports faster purchase decisions, and can contribute to higher conversions by making product exploration quicker and more intuitive.
 
->[DEMO](http://demo1.wpbean.com/woocommerce-lightbox/)  |  [Support](https://wpbean.com/support/)  |  [Buy PRO Version](https://wpbean.com/downloads/woocommerce-lightbox-pro/) |  [PRO Version Demo](https://demo2.wpbean.com/shop/)  |  [Video Documentation](https://www.youtube.com/watch?v=3g2pcfRgi5Q&feature=youtu.be)
 
 ### Free version not comes with the settings. Settings is only for the Pro version.
 
